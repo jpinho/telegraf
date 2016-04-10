@@ -12,5 +12,4 @@ if [ -n "${INFLUXDB_HOST}" ]; then
 fi
 
 echo "=> Starting Telegraf ..."
-
-exec /opt/telegraf/telegraf -config ${CONFIG_FILE}
+exec telegraf -config ${CONFIG_FILE}
